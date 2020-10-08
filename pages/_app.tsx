@@ -1,5 +1,6 @@
-import React, { ReactElement } from 'react'
+/* eslint-disable react/jsx-props-no-spreading */
 import Head from 'next/head'
+import React, { ReactElement } from 'react'
 import { ReactQueryConfigProvider } from 'react-query'
 
 // TODO: Que es _app de next

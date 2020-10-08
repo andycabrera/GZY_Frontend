@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -19,6 +20,7 @@
     "date-fns": "^2.16.1",
     "express": "^4.17.1",
     "formik": "^2.1.7",
+    "husky": "^4.3.0",
     "next": "9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -39,5 +41,10 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
     "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
