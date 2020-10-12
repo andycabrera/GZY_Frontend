@@ -2,13 +2,17 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 import Product from '../../interfaces/product'
 
+const faker = require('faker')
+
 const Container = styled.div`
     display: flex;
     width: 100%;
     flex-direction: column;
+    padding: 20px;
 `
 const Image = styled.div`
     height: 80vh;
+    background: gray;
 `
 
 const DetailContainer = styled.div`
